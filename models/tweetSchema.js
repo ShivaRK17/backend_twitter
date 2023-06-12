@@ -17,7 +17,8 @@ const tweetSchema = new mongoose.Schema({
         required:true,
         default:Date.now
     },
-    likeCount:[mongoose.Schema.Types.ObjectId]
+    likeCount:[mongoose.Schema.Types.ObjectId],
+    comments:[mongoose.Schema.Types.ObjectId]
 })
 
 const Tweet = new mongoose.model('Tweet',tweetSchema)

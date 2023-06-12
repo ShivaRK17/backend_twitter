@@ -13,6 +13,7 @@ app.use(express.json())
 //Routes
 app.use('/api/auth',require('./routes/auth'))
 app.use('/api/tweet',require('./routes/tweet'))
+app.use('/api/comment',require('./routes/comment'))
 
 
 app.listen(port, () => {
