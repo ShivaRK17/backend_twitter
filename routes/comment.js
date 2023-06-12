@@ -8,7 +8,7 @@ const Comment = require('../models/commentSchema')
 
 router.get('/getComments',async(req,res)=>{
     try{
-        const allComm = await Comment.find()
+        const allComm = await Comment.find().sort({date:-1})
         res.json(allComm);
     }catch(err){
         console.log(err);

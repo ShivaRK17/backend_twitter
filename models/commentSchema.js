@@ -20,7 +20,12 @@ const commentSchema = new mongoose.Schema({
     authorImage:{
         type:String,
         required:true
-    }
+    },
+    date:{
+        type:Date,
+        required:true,
+        default:Date.now
+    },
 })
 
 const Comment = new mongoose.model('Comment',commentSchema)
