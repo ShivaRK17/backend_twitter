@@ -25,7 +25,7 @@ const commentSchema = new mongoose.Schema({
         type:Date,
         required:true,
         default:Date.now
-    },
+    }
 })
 
 const Comment = new mongoose.model('Comment',commentSchema)
